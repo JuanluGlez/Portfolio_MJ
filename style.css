@@ -1,0 +1,666 @@
+
+/*========================================================================== Fonts == */
+
+@font-face {
+font-family: 'Univers Next Pro Extended';
+font-style: normal;
+font-weight: normal;
+src: local('Univers Next Pro Extended'), url('univers-next-pro-extended-58f39ec1d8e7a.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Univers Next Pro Extended Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Univers Next Pro Extended Italic'), url('univers-next-pro-extended-italic-58f39ef0c73c6.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Univers Next Pro Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Univers Next Pro Regular'), url('univers-next-pro-regular-58f40dcc81e4f.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Univers Next Pro Condensed Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Univers Next Pro Condensed Italic'), url('univers-next-pro-condensed-italic-58f39d8e22bb3.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Univers Next Pro Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Univers Next Pro Italic'), url('univers-next-pro-italic-58f40d02257aa.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Univers Next Pro Thin';
+font-style: normal;
+font-weight: normal;
+src: local('Univers Next Pro Thin'), url('univers-next-pro-thin-58f39cd9e4cc4.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Univers Next Pro Thin Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Univers Next Pro Thin Italic'), url('univers-next-pro-thin-italic-58f39cbfb57b0.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Univers Next Pro Light Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Univers Next Pro Light Condensed'), url('univers-next-pro-light-condensed-58f3aae7e5bce.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Univers Next Pro Light Extended';
+font-style: normal;
+font-weight: normal;
+src: local('Univers Next Pro Light Extended'), url('univers-next-pro-light-extended-58f39e546848c.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Univers Next Pro Light Condensed Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Univers Next Pro Light Condensed Italic'), url('univers-next-pro-light-condensed-italic-58f39e1c7fbb4.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Univers Next Pro Light Extended Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Univers Next Pro Light Extended Italic'), url('univers-next-pro-light-extended-italic-58f39e3ce81de.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Univers Next Pro Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Univers Next Pro Bold'), url('univers-next-pro-bold-58f40d9eaccce.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Univers Next Pro Bold Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Univers Next Pro Bold Condensed'), url('univers-next-pro-bold-condensed-58f39c3b91e28.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Univers Next Pro Bold Extended';
+font-style: normal;
+font-weight: normal;
+src: local('Univers Next Pro Bold Extended'), url('univers-next-pro-bold-extended-58f39f53743a3.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Univers Next Pro Bold Condensed Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Univers Next Pro Bold Condensed Italic'), url('univers-next-pro-bold-condensed-italic-58f39c6eaa205.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Univers Next Pro Bold Extended Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Univers Next Pro Bold Extended Italic'), url('univers-next-pro-bold-extended-italic-58f39f306807b.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Univers Next Pro Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Univers Next Pro Bold Italic'), url('univers-next-pro-bold-italic-58f40c731bf15.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Univers Next Pro Heavy Condensed Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Univers Next Pro Heavy Condensed Italic'), url('univers-next-pro-heavy-condensed-italic-58f39ddfa906b.woff') format('woff');
+}
+
+
+/*========================================================================== General styles == */
+
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family:'Univers Next Pro Extended';
+}
+
+a
+{
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: #C4C4C4;
+}
+
+p {
+    font-size: 10px;
+    line-height: 16px;
+}
+
+h2 {
+    font-family: 'Univers Next Pro Bold Extended';
+    font-size: 13px;
+}
+
+/*========================================================================== Hamburger menu == */
+
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  position: fixed;
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 24px;
+  height: 23px;
+  position: absolute;
+  top: -9px;
+  left: -5px;
+   
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin-bottom: 4px;
+  position: relative;
+
+  background: #000;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span a {font-size: 12px;}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  font-family: 'Univers Next Pro Bold Extended';
+  padding: 5px 0;
+  font-size: 10px;
+}
+
+#menu .menu-projects {
+    margin: 10px 0px 10px 0px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+li {list-style-type: none;}
+
+/* ------------ Menu queries ------------ */
+
+@media only screen and (max-width: 420px) {
+    #menu {
+        background-color: #000;
+        height: 100vh;
+        width: 100vh;
+        color: #fff;
+        text-align: center;
+    }
+    
+    #menu a {
+        color: white;
+    }
+    
+    #menuToggle input:checked ~ span {
+        background: #fff;
+    }
+    
+    .menu-fistchild {
+        margin-top: 20%;
+    }
+    
+    #menu li {
+        
+        font-size: 15px;
+        width: 42%;
+        line-height: 30px;
+        
+    }
+}
+
+/*========================================================================== Page Content == */
+
+.page-heading > h1 {
+    font-size: 14px;
+    display: inline-block;
+    position: fixed;
+    top: 40px;
+    left: 100px;
+    font-family: 'Univers Next Pro Bold Extended';
+    
+}
+
+.page-content {
+    margin: 0 20px;
+}
+
+/*============================================ Carousel == */
+
+.card {
+    width: 230px; 
+    height: 350px;
+    position: relative;
+    top: 23%;
+    left: 15%;
+}
+
+.card > .image {
+    width: 100%; 
+    height: 70%; 
+    background-color: ghostwhite;
+}
+
+.card > .text >h4 {
+    font-size: 13px;
+}
+
+.carousel {
+    position: relative;
+    width: 320px;
+    margin: auto;
+    margin-top: 30vh;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    color: #000;
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 40%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 5%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3,
+#carousel-4:checked ~ .control-4
+{
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet
+{
+    color: #428bca;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+.era-min {
+    background-image: url(img/ERA/Era-1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.kansei-min {
+    background-image: url(img/KANSEI/kansei-1.png);
+    background-size: 160%;
+    background-position: 50% 40%;
+}
+
+.alquimia-min {
+    background-image: url(img/ALQUIMIA/alquimia-1.jpg);
+    background-size: cover;
+    background-position: 30% 0%;
+}
+
+
+
+/*============================================ Projects == */
+
+.page-project {
+    width: 75%;
+    height: 100vh; 
+    float: right;
+}
+
+.col-project-text {
+    width: 40%;
+    float: left;
+}
+
+.col-project-text > .spacer {
+    height: 70vh;
+}
+
+.col-images {
+    width: 50%;
+    margin-right: 40px;
+    float: right;
+    height: 100vh;
+}
+
+.col-images .img {
+    height: 90vh;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.col-images span {
+    font-family: 'Univers Next Pro Bold Extended';
+    font-size: 13px;
+    font-weight: 600
+}
+
+.sect1 > .col-project-text > .img-min1 {
+    width: 150px;
+    height: 200px;
+    margin-top: 50%;
+    margin-left: 20%;
+}
+
+.era1 {
+    background-image: url(img/ERA/Era-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.era2 {
+    background-image: url(img/ERA/Era-2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.era3 {
+    background-image: url(img/ERA/Era-3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.era4 {
+    background-image: url(img/ERA/Era-4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.kansei1 {
+    background-image: url(img/KANSEI/kansei-1.png);
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat; 
+}
+
+.kansei2 {
+    background-image: url(img/KANSEI/kansei-2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-color: white;
+}
+
+.alquimia1 {
+    background-image: url(img/ALQUIMIA/alquimia-1.jpg);
+    background-position: 30% 0%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-color: white; 
+}
+
+.alquimia2 {
+    background-image: url(img/ALQUIMIA/alquimia-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-color: white; 
+}
+
+.alquimia3 {
+    background-image: url(img/ALQUIMIA/alquimia-3.jpg);
+    background-position: 0% 10%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-color: white; 
+}
+
+@media only screen and (max-width: 420px) {
+    
+    .page-project {
+    width: 70%;
+    height: 100vh;
+    float: none;
+    margin: auto;
+    height: 100%;
+    }
+    
+    .col-project-text > .spacer {
+    height: 20vh;
+}
+    .col-project-text {
+        width: 100%;
+        float: none;
+    }
+    
+    .col-images {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 0;
+    float: none;
+    }
+    
+}
+
+/*============================================ About == */
+
+.about-content {
+    width: 50%;
+    margin-right: 80px;
+    margin-top: 43px;
+    float: right;
+}
+
+.about-content h2 {
+    margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 420px) {
+.about-content {
+    width: 80%;
+    margin-right: 80px;
+    margin: 130px auto;
+    float: none;
+    }
+}
